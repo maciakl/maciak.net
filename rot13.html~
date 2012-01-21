@@ -1,0 +1,18 @@
+
+	<div class="post">
+		<h1 class="title">ROT13 Converter</h1>
+		<div class="entry">
+
+			<p>Paste in your text and hit ROT13.</p>
+
+			<form action="/rot13" method="post">
+
+				<textarea name="rot13" rows="10" cols="50">{{ rot }}</textarea><br>
+				<input type="submit" value="ROT13">
+
+			</form>
+
+		</div>
+	
+	</div>
+

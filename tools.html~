@@ -1,0 +1,21 @@
+
+	<div class="post">
+		<h1 class="title">Tools</h1>
+		<div class="entry">
+
+			<p>Some useful tools.</p>
+
+			<ul>
+				<li><a href="/rot13">ROT13 Converter</a> - does what it says on the tin.</li>
+				<li><a href="/guid">GUID Generator</a> - generate some random Globally Unique Identifiers.</li>
+				<li><a href="/hash">MD5 and SHA Generator</a> - generate md5, sha1 and sha256 values of the input string</li>
+				<li><a href="/b64">Base 64 Encode</a> - Encode and decode base 64 strings.</li>
+				<li><a href="/lipsum">Lorem Ipsum Generator</a> - Generates random lorem ipsum paragraphs.</li>
+				<li><a href="/pass">Random Password Generator</a> - Generate random easy to remember passwords.</li>
+			</ul>
+
+
+		</div>
+	
+	</div>
+

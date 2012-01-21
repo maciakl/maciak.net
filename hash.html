@@ -1,0 +1,28 @@
+
+	<div class="post">
+		<h1 class="title">MD5 and SHA Digest Generator</h1>
+		<div class="entry">
+
+			<p>Type in any string up to 50 characters long into the box and hit hash.<br>
+			This will generate md5, sha1 and sha256 digests for that string.</p>
+
+			<form action="/hash" method="post">
+
+				<input type="text" name="hashstring" size="50" maxsize="50"> <input type="submit" value="Hash">
+			</form>
+
+				<br><br>
+
+				<dl>
+					<dt>MD5</dt> <dd>{{hash.md5}}</dd>
+					<dt>SHA1</dt> <dd>{{hash.sha1}}</dd>
+					<dt>SHA256</dt> <dd>{{hash.sha256}}</dd>
+				</dl>
+
+				
+				<br><br>
+				<p><small>Note: I do not save these values but... Don't try to hash your passwords online anywhere.</small></p>
+		</div>
+	
+	</div>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>maciak.net - homepage of Lukasz Grzegorz Maciak</title>
+	<link href="/static/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">maciak.net</a></h1>
+			<p> homepage of Lukasz Grzegorz Maciak</p>
+		</div>
+	</div>
+	<!-- end #header -->
+
+	<div id="menu">
+		<ul>
+			<li class="{{main}}" ><a href="/">Home</a></li>
+			<li class="{{ about }}" ><a href="/about">About</a></li>
+			<li class="{{ contact }}" ><a href="/contact">Contact</a></li>
+			<li class="{{ projects }}" ><a href="/projects">Projects</a></li>
+			<li class="{{publications}}" ><a href="/publications">Publications</a></li>
+			<li class="{{tools}}" ><a href="/tools">Tools</a></li>
+			
+			
+		</ul>
+	</div>
+	<!-- end #menu -->
+
+
+<div id="wrapper">
+<div class="btm">
+	<div id="page">
+		<div id="content">
+
+			{% if page %}
+				{% include page %}
+			{% else %}
+				{% include "main.html" %}
+			{% endif %}
+
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+				<li>
+					<h2>My Life Online:</h2><br>
+										
+					<ul>
+						<li><a href="http://www.terminally-incoherent.com/">Terminally Incoherent</a> <span>This is where I exist. My main blog. </span></li>
+						<li><a href="http://random.terminally-incoherent.com/">/dev/random</a> <span>Tumbleblog full of randomness.</span> </li>
+						<li><a href="http://twitter.com/maciakl">My Twitter</a> <span>Because everyone has to have one.</span> </li>
+						<li><a href="http://www.google.com/profiles/maciakl">Google Profile</a> <span>For one I welcome our Google overlords.</span> </li>
+						<li><a href="http://gigiedgleyfansite.com">Gigi Edgley Fansite</a> <span>A fan site tat I run.</span></li>
+						<li><a href="http://109.ath.cx">CMPT 109</a> <span>Page for the class I teach at MSU.</span></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2008 maciak.net. All rights reserved.</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

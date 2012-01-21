@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>maciak.net - homepage of Lukasz Grzegorz Maciak</title>
+	<link href="/static/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+	
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">maciak.net</a></h1>
+			<p> homepage of Lukasz Grzegorz Maciak</p>
+		</div>
+	</div>
+	<!-- end #header -->
+
+	<div id="menu">
+		<ul>
+			<li class="{{main}}" ><a href="/">Home</a></li>
+			<li class="{{ about }}" ><a href="/about">About</a></li>
+			<li class="{{ contact }}" ><a href="/contact">Contact</a></li>
+			<li class="{{ projects }}" ><a href="/projects">Projects</a></li>
+			<li class="{{publications}}" ><a href="/publications">Publications</a></li>
+			<li class="{{tools}}" ><a href="/tools">Tools</a></li>
+			<li class="" ><a href="http://blog.maciak.net">Blog</a></li>
+			
+			
+		</ul>
+	</div>
+	<!-- end #menu -->
+
+
+<div id="wrapper">
+<div class="btm">
+	<div id="page">
+		<div id="content">
+
+			{% if page %}
+				{% include page %}
+			{% else %}
+				{% include "main.html" %}
+			{% endif %}
+
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+				<li>
+					<h2>Useful Links:</h2><br>
+										
+					<ul>
+						<li><a href="https://plus.google.com/102580827307063335842/">+Luke Maciak</a> <span> My Google+ profile.</span></li>
+						<li><a href="http://maciak.org/">maciak.org</a> <span> My free software and tools </span></li>
+						<li><a href="https://www.masterbranch.com/developer/LukeMaciak"> Masterbranch</a> <span>My profile on Masterbranch.</span> </li>
+						<li><a href="https://github.com/maciakl">GitHub</a> <span>My GitHub profile.</span> </li>
+						<li><a href="http://code.google.com/u/102580827307063335842/">Google Code</a> <span>My Google Code projects.</span> </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2008 maciak.net. All rights reserved.</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+	<div class="post">
+		<h1 class="title">Base 64</h1>
+		<div class="entry">
+
+			<p>Paste in your text and hit ROT13.</p>
+
+			<form action="/b64" method="post">
+				<label for="base64encode">Text:</label><br><textarea name="base64encode" rows="5" cols="50">{{ b64decode }}</textarea><br>
+				<label for="base64encode">Base64:</label><br><textarea name="base64decode" rows="5" cols="50">{{ b64encode }}</textarea><br>
+				<input type="submit" value="Encode/Decode">
+			</form>
+
+		</div>
+	
+	</div>
+

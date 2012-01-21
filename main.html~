@@ -1,0 +1,20 @@
+		<div class="post">
+				<h1 class="title">Welcome</h1>
+				<p><small>This is not the best website in the world - this is just a tribute.</small></p>
+
+				<div class="entry">
+					<p><img src="/static/msk.jpg" style="float: right; padding-left: 15px;" alt="A little picture of me"></img>
+					
+					I work in the real world. I live on the internet. Mostly...</p>
+
+				       
+					<p>I am a certified geek, technology blogger, programmer and a systems administrator. I also teach "Fluency in Technology" at <a href="http://montclair.edu">Montclair State University</a> as an adjunct professor.</p> 
+					
+					<p>The most web-visible of my activities is probably my blog <a href="http://www.terminally-incoherent.com">Terminally Incoherent</a> which does seem to have a small but loyal readership.</p> 
+					
+					<p>There are few links to some of my past and current projects in the sidebar. Check out the Publications tab to see my academic work.</p>	
+
+								
+				</div>
+			
+			</div>
