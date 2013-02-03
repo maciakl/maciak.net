@@ -1,15 +1,19 @@
+<div class="row">
+    <div class="span12">
 
-	<div class="post">
-		<h1 class="title">Lorem Ipsum</h1>
-		<div class="entry">
-
-			<p>This tool will generate randomized lorem ipsum text. <br>Default is 5 paragraphs starting with Lorem Ipsum. Max is 100.</p>
+		<h1>Lorem Ipsum</h1>
+        
+        <p>This tool will generate randomized lorem ipsum text. Default is 5 paragraphs starting with Lorem Ipsum. Max is 100.</p>
 			
 			<form action="/lipsum" method="post">
-				<label for="para">How many paragraphs? <input type="text" name="para" size="2"></label><input type="submit" value="Generate">
+                <fieldset>
+                    <label for="para">How many paragraphs?</label> 
+                    <input type="text" name="para" class="input-mini" placeholder="5"><br/>
+                    <input type="submit" value="Generate" class="btn btn-inverse">
+                </fieldset>
 			</form>
 
-			<br><br><br>
+        <h2>Output</h2>
 
 			{% for paragraph in lorem %}
 
@@ -17,8 +21,6 @@
 
 			{% endfor %}
 
-
-		</div>
-	
-	</div>
+    </div>	
+</div>
 

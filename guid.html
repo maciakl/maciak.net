@@ -1,15 +1,18 @@
-
-	<div class="post">
-		<h1 class="title">GUID Generator</h1>
-		<div class="entry">
-
+<div class="row">
+    
+    <div class="span12">
+        
+        <h1 class="title">GUID Generator</h1>
+		
 		<p>Need some Globally Unique ID's? Here's 10 of them. Refresh page for a new set.</p>
 
-	<pre>{% for id in guid %}
-	{{id}}
-	{% endfor %}</pre>
+        <textarea class="span6" rows="12">
+{% for id in guid %}{{id}}
+{% endfor %}
+        </textarea>
 
-		</div>
-	
-	</div>
+        <p><a class="btn btn-inverse" href="/guid">Get another set &raquo;</a></p>
+
+	</div>	
+</div>
 

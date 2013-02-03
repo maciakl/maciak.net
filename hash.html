@@ -1,28 +1,39 @@
+<div class="row">
+    <div class="span4">
+		<h2>Digest Generator</h2>
 
-	<div class="post">
-		<h1 class="title">MD5 and SHA Digest Generator</h1>
-		<div class="entry">
+        <p>Type in any string up to 50 characters long into the box and hit hash.
+        This will generate md5, sha1 and sha256 digests for that string.</p>
 
-			<p>Type in any string up to 50 characters long into the box and hit hash.<br>
-			This will generate md5, sha1 and sha256 digests for that string.</p>
+        <br/>
 
-			<form action="/hash" method="post">
-
-				<input type="text" name="hashstring" size="50" maxsize="50"> <input type="submit" value="Hash">
+        <form action="/hash" method="post">
+            <fieldset>
+                <label>Text to be hashed:</label>
+                <input type="text" name="hashstring" maxsize="50" class="input-xlarge" placeholder="Type something in..."><br>
+                <input type="submit" value="Hash" class="btn btn-inverse">
+            </fieldset>
 			</form>
 
-				<br><br>
+    </div>
+    <div class="span8">
 
-				<dl>
-					<dt>MD5</dt> <dd>{{hash.md5}}</dd>
-					<dt>SHA1</dt> <dd>{{hash.sha1}}</dd>
-					<dt>SHA256</dt> <dd>{{hash.sha256}}</dd>
-				</dl>
+        <h2>Results</h2>
 
-				
-				<br><br>
-				<p><small>Note: I do not save these values but... Don't try to hash your passwords online anywhere.</small></p>
-		</div>
-	
-	</div>
+        <p>Unsalted hash digests:</p>
+
+		<p class="info">
+            <strong>MD5:</strong> <samp>{{hash.md5}}</samp><br/>
+            <strong>SHA1:</strong> <samp>{{hash.sha1}}</samp><br/>
+            <strong>SHA256:</strong> <samp>{{hash.sha256}}</samp><br/>
+		</p>
+
+	</div>	
+</div>
+<div class="row">
+    <div class="span12">
+        <p><strong>Note:</strong> I do not save these values but... Don't try to hash your passwords online anywhere.</p>
+    </div>
+</div>
+
 

@@ -1,18 +1,19 @@
+<div class="row">
 
-	<div class="post">
-		<h1 class="title">ROT13 Converter</h1>
-		<div class="entry">
+    <div class="span12">
 
-			<p>Paste in your text and hit ROT13.</p>
+		<h1>ROT13 Converter</h1>
 
-			<form action="/rot13" method="post">
+        <form action="/rot13" method="post">
+            <fieldset>
+                <legend>Obfuscate/Deobfuscate text with ROT13</legend>
+				<textarea name="rot13" rows="15" class="span12" placeholder="Type in some text.." >{{ rot }}</textarea><br>
+                <input type="submit" value="Convert Using ROT13" class="btn btn-inverse">
+            </fieldset>
 
-				<textarea name="rot13" rows="10" cols="50">{{ rot }}</textarea><br>
-				<input type="submit" value="ROT13">
+        </form>
 
-			</form>
-
-		</div>
+    </div>
 	
-	</div>
+</div>
 
