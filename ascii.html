@@ -9,7 +9,7 @@
 <div class="row">
     <div class="span1">
 				{% for a in punctuation %}
-					<samp>{{a}}</samp><br>
+					<samp>{{a|escape}}</samp><br>
 				{% endfor %}
     </div>
 
