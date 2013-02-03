@@ -1,17 +1,21 @@
+<div class="row">
+    <div class="span12">
 
-	<div class="post">
 		<h1 class="title">Base 64</h1>
-		<div class="entry">
 
-			<p>Encode/Decode base 64 text.</p>
-
-			<form action="/b64" method="post">
-				<label for="base64encode">Text:</label><br><textarea name="base64encode" rows="5" cols="50">{{ b64decode }}</textarea><br>
-				<label for="base64encode">Base64:</label><br><textarea name="base64decode" rows="5" cols="50">{{ b64encode }}</textarea><br>
-				<input type="submit" value="Encode/Decode">
+        <form action="/b64" method="post">
+            <fieldset>
+                <legend>Encode/Decode base 64 text.</legend>
+                <label for="base64encode">Text:</label>
+                <textarea name="base64encode" rows="5" class="span8" placeholder="Type in some text...">{{ b64decode }}</textarea>
+                <label for="base64encode">Base64:</label>
+                <textarea name="base64decode" rows="5" class="span8">{{ b64encode }}</textarea>
+                <br/>
+                <input type="submit" value="Encode/Decode" class="btn btn-inverse">
+            </fieldset>
 			</form>
 
-		</div>
-	
 	</div>
+	
+</div>
 

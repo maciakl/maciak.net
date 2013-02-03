@@ -1,74 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>maciak.net - homepage of Lukasz Grzegorz Maciak</title>
-	<link href="/static/style.css" rel="stylesheet" type="text/css" media="screen" />
-	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>maciak.net - Homepage of Luke Maciak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage of Luke Maciak">
+    <meta name="author" content="Luke Maciak">
+
+    <link href="static/components/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/components/Font-Awesome/css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+      .info {
+          margin-left: 15px;
+      }
+    </style>
+    <link href="static/components/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
 	
 </head>
 <body>
-	<div id="header">
-		<div id="logo">
-			<h1><a href="#">maciak.net</a></h1>
-			<p> homepage of Lukasz Grzegorz Maciak</p>
-		</div>
-	</div>
-	<!-- end #header -->
 
-	<div id="menu">
-		<ul>
-			<li class="{{main}}" ><a href="/">Home</a></li>
-			<li class="{{ about }}" ><a href="/about">About</a></li>
-			<li class="{{ contact }}" ><a href="/contact">Contact</a></li>
-			<li class="{{ projects }}" ><a href="/projects">Projects</a></li>
-			<li class="{{publications}}" ><a href="/publications">Publications</a></li>
-			<li class="{{tools}}" ><a href="/tools">Tools</a></li>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">maciak.net</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                <li {% ifequal page 'main.html' %} class="active" {% endifequal %}><a href="/"><i class="icon-home icon-white"></i> Home</a></li>
+                <li {% ifequal page 'about.html' %} class="active" {% endifequal %}><a href="/about"><i class="icon-question-sign icon-white"></i> About</a></li>
+                <li {% ifequal page 'contact.html' %} class="active" {% endifequal %}><a href="/contact"><i class="icon-envelope icon-white"></i> Contact</a></li>
+                <li  {% ifequal page 'projects.html' %} class="active" {% endifequal %}><a href="/projects"><i class="icon-folder-open icon-white"></i> Projects</a></li>
+                <li {% ifequal page 'publications.html' %} class="active" {% endifequal %}><a href="/publications"><i class="icon-book icon-white"></i> Publications</a></li>
+                <li {% ifequal page 'tools.html' %} class="active" {% endifequal %}><a href="/tools"><i class="icon-wrench icon-white"></i> Tools</a></li>
 			
-		</ul>
-	</div>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
 	<!-- end #menu -->
 
 
-<div id="wrapper">
-<div class="btm">
-	<div id="page">
-		<div id="content">
+<div class="container">
 
 			{% if page %}
 				{% include page %}
 			{% else %}
 				{% include "main.html" %}
-			{% endif %}
+            {% endif %}
 
-		</div>
-		<!-- end #content -->
-		<div id="sidebar">
-			<ul>
-				
-				<li>
-					<h2>Useful Links:</h2><br>
-										
-					<ul>
-						<li><a href="https://plus.google.com/102580827307063335842/">+Luke Maciak</a> <span> My Google+ profile.</span></li>
-						<li><a href="http://maciak.org/">maciak.org</a> <span> My free software and tools </span></li>
-						<li><a href="https://github.com/maciakl">GitHub</a> <span>My GitHub profile.</span> </li>
-						<li><a href="http://code.google.com/u/102580827307063335842/">Google Code</a> <span>My Google Code projects.</span> </li>
-						<li><a href="https://www.masterbranch.com/developer/LukeMaciak"> Masterbranch</a> <span>My profile on Masterbranch.</span> </li>
-						<li><a href="http://coderwall.com/luke">Coderwall</a> <span>My profile on Coderwall.</span> </li>						
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<!-- end #sidebar -->
-		<div style="clear: both;">&nbsp;</div>
-	</div>
-	<!-- end #page -->
-</div>
-</div>
-	<div id="footer">
-		<p>Copyright (c) 2008 maciak.net. All rights reserved.</p>
-	</div>
-	<!-- end #footer -->
-</body>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Luke Maciak 2008</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/components/jquery/jquery.min.js"></script>
+    <script src="static/components/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,37 +1,34 @@
 
-	<div class="post">
+<div class="row">
+    <div class="span12">
 		<h1 class="title">ASCII Table</h1>
-		<div class="entry">
+        <p>Simple ASCII Table. Does not include symbols and non-printables</p>
+    </div>
+</div>
 
-		<p>Simple ASCII Table. Does not include symbols and non-printables</p>
-
-			<div style="float: left;">		
+<div class="row">
+    <div class="span1">
 				{% for a in punctuation %}
 					<samp>{{a}}</samp><br>
 				{% endfor %}
-			</div>
-		
-			<div style="float: left; margin-left: 55px;">		
+    </div>
+
+    <div class="span1">
 				{% for a in upper %}
 					<samp>{{a}}</samp><br>
 				{% endfor %}
-			</div>
-			<div style="float: left; margin-left: 55px;">		
-				{% for a in lower %}
+	</div>
+    <div class="span1">
+                {% for a in lower %}
 					<samp>{{a}}</samp><br>
 				{% endfor %}
-			</div>
+        </div>
 
-			<div style="float: left; margin-left: 55px;">		
+    <div class="span1">		
 				{% for a in digits %}
 					<samp>{{a}}</samp><br>
 				{% endfor %}
-			</div>
-
-			
-		
-
-		</div>
-	
 	</div>
+	
+</div>
 
